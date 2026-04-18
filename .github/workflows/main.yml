@@ -1,0 +1,11 @@
+name: Go
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+     branches: [ "main" ] 
+jobs:   
+ main-test:
+    runs-on: ubuntu-latest
+    container: golang:1.25.5
+       
